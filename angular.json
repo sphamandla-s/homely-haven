@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "stand-alon-learn": {
+    "homely-haven": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/stand-alon-learn",
+            "outputPath": "dist/homely-haven",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -82,10 +82,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "stand-alon-learn:build:production"
+              "buildTarget": "homely-haven:build:production"
             },
             "development": {
-              "buildTarget": "stand-alon-learn:build:development"
+              "buildTarget": "homely-haven:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,7 +93,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "stand-alon-learn:build"
+            "buildTarget": "homely-haven:build"
           }
         },
         "test": {
