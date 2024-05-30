@@ -25,6 +25,10 @@ COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 # Copy the built Angular app from the previous stage to the Nginx html directory
 COPY --from=build /app/dist/homely-haven/browser /usr/share/nginx/html
 
+
+# Check the files copied to the Nginx html directory
+RUN ls -la /usr/share/nginx/html
+
 # Expose port 80 to the outside world
 EXPOSE 8083
 
